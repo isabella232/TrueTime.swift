@@ -55,9 +55,7 @@
 		2874855B1DB1AE720020B777 /* NTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2874855A1DB1AE720020B777 /* NTPResponse.swift */; };
 		2874855C1DB1DFB80020B777 /* NTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2874855A1DB1AE720020B777 /* NTPResponse.swift */; };
 		2874855D1DB1DFB90020B777 /* NTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2874855A1DB1AE720020B777 /* NTPResponse.swift */; };
-		287C37D11D44202000084D47 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 287C37D01D44202000084D47 /* Result.framework */; };
 		287C37F01D4422CE00084D47 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 287C37CB1D441FC700084D47 /* Result.framework */; };
-		287C37FB1D44297000084D47 /* Result.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 287C37D01D44202000084D47 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		28804D9B1D8A2B5600FB186F /* SocketAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B93B511D8A05AC00DC91FD /* SocketAddress.swift */; };
 		28804D9C1D8A2B5600FB186F /* SocketAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B93B511D8A05AC00DC91FD /* SocketAddress.swift */; };
 		288334C01DAF200000A38C7C /* NTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288334BF1DAF200000A38C7C /* NTPClient.swift */; };
@@ -121,7 +119,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				287C37FB1D44297000084D47 /* Result.framework in Copy Frameworks */,
 				28AF2F7B1D3CB66100FE536A /* TrueTime.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
@@ -217,7 +214,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				287C37D11D44202000084D47 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,6 +678,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1112,6 +1109,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.instacart.TrueTime;
 				PRODUCT_NAME = TrueTime;
@@ -1121,6 +1119,7 @@
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1141,6 +1140,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.instacart.TrueTime;
 				PRODUCT_NAME = TrueTime;
@@ -1150,6 +1150,7 @@
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1337,6 +1338,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.instacart.NetworkTimeExample;
 				PRODUCT_NAME = TrueTimeExample;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1356,6 +1358,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.instacart.NetworkTimeExample;
 				PRODUCT_NAME = TrueTimeExample;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
